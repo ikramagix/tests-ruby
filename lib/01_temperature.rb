@@ -7,7 +7,7 @@ def ctof(b)
 end
 
 =begin 
-comment j'ai solutionné les 4 erreurs persistantes 
-en utilisant la formule dans l'autre sens 
-convertir en float pour eviter que si on commence par l'addition, ça dépasse la marge d'erreur 0.1 accordée par programme de test
+comment j'ai solutionné les 4 erreurs persistantes :
+commencer par la multiplication sinon avec addition en premier, sinon ça fausse les résultats
+convertir en float pour que la marge d'erreur en float (0.1) puisse s'appliquer
 =end
