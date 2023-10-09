@@ -14,6 +14,6 @@ def power(e, f)
     (e**f)
 end
 
-def sum
-    kill me
+def sum(g) #needs a fix
+    [].sum(0).to_i
 end
