@@ -22,19 +22,19 @@ end
 
 describe "sum" do
   it "computes the sum of an empty array" do
-    expect(sum([])).to eq(0)
+    expect(sum([])).to eq(0) #si array vide, doit renvoyer 0
   end
 
   it "computes the sum of an array of one number" do
-    expect(sum([7])).to eq(7)
+    expect(sum([7])).to eq(7) #si array = 7, doit renvoyer 7
   end
 
   it "computes the sum of an array of two numbers" do
-    expect(sum([7,11])).to eq(18)
+    expect(sum([7,11])).to eq(18) #si 2 valeurs ou plus doivent être additinnées
   end
 
   it "computes the sum of an array of many numbers" do
-    expect(sum([1,3,5,7,9])).to eq(25)
+    expect(sum([1,3,5,7,9])).to eq(25) #doit additionner toutes les valeurs 
   end
 end
 
@@ -47,16 +47,19 @@ describe "#multiply" do
     expect(multiply(3, 4)).to eq(12)
   end
 
-  it "multiplies two other numbers"
-    # one other test here, don't forget do end ;)
+  it "multiplies two other numbers" do
+    expect(multiply(8, 2)).to eq(16)
+  end
 
-  it "multiplies two other numbers, one of them being 0"
-    # one last test, with 0 in it
-
+  it "multiplies two other numbers, one of them being 0" do
+    expect(multiply(5, 3)).to eq(15)
+  end
 end
 
 describe "#power" do
-  it "raises one number to the power of another number"
+  it "raises one number to the power of another number" do
+    expect(power(2, 3)).to eq(8)
+  end
 end
 
 # http://en.wikipedia.org/wiki/Factorial
